@@ -12,6 +12,8 @@ Build Instructions
   `LINUX: gcc -shared -o udf_median.so udf_median.cc -I/usr/include/mysql -m64 -lstdc++ -fPIC`
 
   This will generate udf_median.so
+  
+  You might need to install mysql headers before compilation (on ubuntu `sudo apt-get install libmysqlclient-dev`)
 
 2. Open your MySQL client, and run `SHOW VARIABLES;` and look for `plugin_dir`
 
